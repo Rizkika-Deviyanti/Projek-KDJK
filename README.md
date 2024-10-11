@@ -1,6 +1,13 @@
-# Projek KDJK Kelompok 4
+# Projek KDJK Kelompok 4 P3
+|        Nama                  |     NIM      | 
+|------------------------------|--------------|
+| Rizkika Deviyanti            | G64012212007 | 
+| Cindy Anatasya Sagala        | G6401221018  | 
+| Shafaya Saskirana            | G6401221092  | 
+| Justin Kristaldi Djafar      | G6401221102  | 
+| Firza?                       | G6401221     | 
 
-# Aplikasi Web "XYZ"
+# Aplikasi Web "Calibree"
 
 
 ## Sekilas Tentang
