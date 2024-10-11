@@ -55,11 +55,24 @@ Skrip shell untuk otomatisasi instalasi, konfigurasi, dan maintenance.
 ## Pembahasan
 
 - Pendapat anda tentang aplikasi web ini
-    - kelebihan
-    - kekurangan
+<details>
+  <summary>Kelebihan Calibre</summary>
+- Praktis dan mudah digunakan<br>
+- Dapat memindahkan buku ke gadget melalui browser/http (bekerja sebagai web server)<br>
+- Convert dari website ke dokumen yang bisa dibaca di ebook reader
+</details>
+
+<details>
+  <summary>Kekurangan Calibre</summary>
+- Tampilan pengguna kurang modern<br>
+- Memakan banyak sumber daya sistem, terutama saat mengelola koleksi e-book yang besar atau saat melakukan konversi format<br>
+- Masalah hak cipta saat mengimpor atau menonversi e-book<br>
+- Bagi pemula, menghubungkan perangkat e-reader ke Calibre bisa terasa rumit
+</details>
 - Bandingkan dengan aplikasi web lain yang sejenis
 
 
 ## Referensi
-
-Cantumkan tiap sumber informasi yang anda pakai.
+https://www.digitalocean.com/community/tutorials/how-to-create-a-calibre-ebook-server-on-ubuntu-20-04
+https://gist.github.com/plembo/337f323e53486cbdb03100692ae8c892                                                                                                    
+https://github.com/janeczku/calibre-web
