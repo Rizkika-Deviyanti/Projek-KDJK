@@ -7,13 +7,11 @@
 | Justin Kristaldi Djafar      | G6401221102  | 
 | Firza?                       | G6401221     | 
 
-# Aplikasi Web "Calibree"
-
+# Aplikasi Web "Calibre"
+![image](https://github.com/user-attachments/assets/684eff8f-1173-474c-ad1b-44e837600f55)
 
 ## Sekilas Tentang
-
-Deskripsi singkat tentang aplikasi tsb.
-
+Calibre adalah manajer dan platform pengeditan e-book powerful yang bersifat lintas platform dan open source. Komponen calibre-server dapat digunakan untuk menerbitkan perpustakaan e-book di jaringan lokal. Meskipun calibre-server dapat dijalankan sebagai aplikasi desktop, Calibre juga dapat dijalankan sebagai daemon di server Linux tanpa antarmuka grafis.
 
 ## Instalasi
 
