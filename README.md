@@ -1,7 +1,7 @@
 # Projek KDJK Kelompok 4 P3
 |        Nama                  |     NIM      | 
 |------------------------------|--------------|
-| Rizkika Deviyanti            | G64012212007 | 
+| Rizkika Deviyanti            | G6401221207 | 
 | Cindy Anatasya Sagala        | G6401221018  | 
 | Shafaya Saskirana            | G6401221092  | 
 | Justin Kristaldi Djafar      | G6401221102  | 
