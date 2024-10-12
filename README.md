@@ -14,13 +14,86 @@
 Calibre adalah manajer dan platform pengeditan e-book powerful yang bersifat lintas platform dan open source. Komponen calibre-server dapat digunakan untuk menerbitkan perpustakaan e-book di jaringan lokal. Meskipun calibre-server dapat dijalankan sebagai aplikasi desktop, Calibre juga dapat dijalankan sebagai daemon di server Linux tanpa antarmuka grafis.
 
 ## Instalasi
+**- Prasyarat** katanya belum ya ges ya<br>
+Kelompok kami menggunakan Linux Command Line. Sebelum melakukan instalasi, persyaratan yang perlu dipenuhi adalah setup server dengan Ubuntu, dan kami menggunakan Ubuntu 22.04
+1. Logging sebagai root
+```
+$ ssh root@your_server_ip/diganti
+```
+2. Membuat user baru sebagai admin
+```
+# adduser sammy/diganti
+```
+3. Memberikan izin akses sudo kepada user untuk melakukan tugas administratif di sistem
+```
+# usermod -aG sudo sammy
+```
+4. Setup Firewall
+```
+# ufw app list
 
-- Prasyarat, apa saja yang harus diinstal sebelumnya.
-- Langkah instalasi dalam CLI.
+//Memastikan firewall mengizinkan koneksi SSH
+# ufw allow OpenSSH
 
+//Aktifkan firewall
+# ufw enable //Lalu ketik y dan tekan ENTER
+
+//Mengecek status koneksi SSH
+# ufw status
+```
+Tampilin SSan Output:
+
+5. Mengaktifkan akses eksternal untuk user biasa
+```
+```
+```
+```
+**- Proses Instalasi**<br>
+**A. Proses instalasi calibre content server**
+```
+1. Download dan install calibre server
+$ wget https://download.calibre-ebook.com/linux-installer.sh
+
+2. Periksa isi dari skrip tersebut
+$ less linux-installer.sh
+
+3. Jalankan skrip untuk menginstal calibre
+$ sudo sh linux-installer.sh
+```
+**B. Membuat library dan menambahakan buku**
+```
+1. Download buku ke server
+$ wget http://www.gutenberg.org/ebooks/46.kindle.noimages -O christmascarol.mobi
+
+2. Membuat directory yang dapat digunakan oleh Calibre sebagai library e-book
+$ mkdir calibre-library
+
+3. Tambahkan buku yang sudah di download ke library menggunakan perintah calibredb
+$ calibredb add *.mobi --with-library calibre-library/
+```
+Tampilan output:
+Screenshot<br>
+
+**C. Menjalankan calibre Content Server dan melihat library**
+Sebelum mengakses calibre content server di browser web, kita perlu memastikan bahwa server dapat menerima traffic pada port 8080, yang merupakan port default untuk calibre.
+```
+1. Buka port 8080
+$ sudo ufw allow 8080
+
+2. Periksa status untuk memastikan port terbuka
+$ sudo ufw status
+```
+Tampilan output:
+Screenshot<br>
+
+```
+3. Jalankan perintah untuk memulai calibre content server
+$ calibre-server calibre-library
+```
+Tampilan output:
+Screenshot<br>
 
 ## Konfigurasi (opsional)
-
 Setting server tambahan yang diperlukan untuk meningkatkan fungsi dan kinerja aplikasi, misalnya:
 - batas upload file
 - batas memori
@@ -74,5 +147,5 @@ Skrip shell untuk otomatisasi instalasi, konfigurasi, dan maintenance.
 
 ## Referensi
 https://www.digitalocean.com/community/tutorials/how-to-create-a-calibre-ebook-server-on-ubuntu-20-04
-https://gist.github.com/plembo/337f323e53486cbdb03100692ae8c892                                                                                                    
+https://gist.github.com/plembo/337f323e53486cbdb03100692ae8c892                                                                                      
 https://github.com/janeczku/calibre-web
