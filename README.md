@@ -129,10 +129,12 @@ Ketika masuk ke server akan ada tampilan
 ![image](https://github.com/user-attachments/assets/624b9955-6337-459c-8640-b882aec0df29)
 
 ## Cara Pemakaian
+![image](https://github.com/user-attachments/assets/21fb1be5-edaa-4f27-a882-3cd7ead21301)
+Klik buku untuk membaca
+![image](https://github.com/user-attachments/assets/37316bb3-abe0-4142-b0d2-e5b20d5aac90)
+Next untuk lanjut ke halaman berikutnya
+![image](https://github.com/user-attachments/assets/28c056fd-3c30-41ff-a8f0-3aaf4553ec38)
 
-- Tampilan aplikasi web
-- Fungsi-fungsi utama
-- Isi dengan data real/dummy (jangan kosongan) dan sertakan beberapa screenshot
 
 ## Pembahasan
 Calibre dirancanag dengan interface yang sederhana, sehingga membuat pengelolaan koleksi e-book menjadi lebih mudah. Calibre memudahkan transfer buku antara komputer dan e-reader, baik secara nirkabel maupun menggunakan kabel USB. Setelah perangkat disinkronkan pertama kali, Calibre akan secara otomatis mengonversi buku ke format yang paling sesuai saat mentransfernya ke e-reader. Namun, Calibre tidak bisa membaca buku yang dilindungi DRM, yang sering berlaku untuk e-book berhak cipta dari toko-toko seperti Kindle. Keterbatasan ini bisa menjadi kendala bagi pengguna yang ingin menyinkronkan buku yang dibeli dari platform dengan perlindungan hak cipta ketat. Meskipun begitu, Calibre tetap menjadi alat yang sangat efisien dalam mentransfer dan mengelola e-book dari berbagai perangkat.
