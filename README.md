@@ -5,7 +5,6 @@
 | Cindy Anatasya Sagala        | G6401221018  | 
 | Shafaya Saskirana            | G6401221092  | 
 | Justin Kristaldi Djafar      | G6401221102  | 
-| Firza?                       | G6401221     | 
 
 # Aplikasi Web "Calibre"
 ![image](https://github.com/user-attachments/assets/684eff8f-1173-474c-ad1b-44e837600f55)
@@ -14,40 +13,7 @@
 Calibre adalah manajer dan platform pengeditan e-book powerful yang bersifat lintas platform dan open source. Komponen calibre-server dapat digunakan untuk menerbitkan perpustakaan e-book di jaringan lokal. Meskipun calibre-server dapat dijalankan sebagai aplikasi desktop, Calibre juga dapat dijalankan sebagai daemon di server Linux tanpa antarmuka grafis.
 
 ## Instalasi
-**- Prasyarat** katanya belum ya ges ya<br>
-Kelompok kami menggunakan Linux Command Line. Sebelum melakukan instalasi, persyaratan yang perlu dipenuhi adalah setup server dengan Ubuntu, dan kami menggunakan Ubuntu 22.04
-1. Logging sebagai root
-```
-$ ssh root@your_server_ip/diganti
-```
-2. Membuat user baru sebagai admin
-```
-# adduser sammy/diganti
-```
-3. Memberikan izin akses sudo kepada user untuk melakukan tugas administratif di sistem
-```
-# usermod -aG sudo sammy
-```
-4. Setup Firewall
-```
-//Memastikan firewall mengizinkan koneksi SSH
-# ufw allow OpenSSH
-
-//Aktifkan firewall
-# ufw enable //Lalu ketik y dan tekan ENTER
-
-//Mengecek status koneksi SSH
-# ufw status
-```
-Kalo
-Tampilin SSan Output:
-
-5. Mengaktifkan akses eksternal untuk user biasa
-```
-```
-```
-```
-**- Proses Instalasi**<br>
+Kelompok kami menggunakan Linux Command Line<br>
 **A. Proses instalasi calibre content server**
 ```
 1. Download dan install calibre server
@@ -76,9 +42,7 @@ $ calibredb list --with-library calibre-library/
 Jika buku berhasil ditambahkan akan menghasilkan output:
 ![image](https://github.com/user-attachments/assets/0aac92f4-1624-489a-b9a8-fb6f427c01b4)
 
-
-
-**C. Menjalankan calibre Content Server dan melihat library**
+**C. Menjalankan calibre Content Server dan melihat library**<br>
 Sebelum mengakses calibre content server di browser web, kita perlu memastikan bahwa server dapat menerima traffic pada port 8080, yang merupakan port default untuk calibre.
 ```
 1. Buka port 8080
@@ -144,9 +108,8 @@ Menambahkan user ke dalam server
 5. Menampilkan script management
 calibre-server --manage-users
 ```
-Tambahkan user dengan mengetik 1 dan isikan username dan password
-![image](https://github.com/user-attachments/assets/84eb4fd7-cd74-4f7b-b14a-79b2213030e5)
-
+Tambahkan user dengan mengetik 1 dan isikan username dan password<br>
+![image](https://github.com/user-attachments/assets/84eb4fd7-cd74-4f7b-b14a-79b2213030e5)<br>
 Jika berhasil akan menampilkan
 ```
 User xyz added successfully!
@@ -165,37 +128,11 @@ systemctl status calibre-server
 Ketika masuk ke server akan ada tampilan
 ![image](https://github.com/user-attachments/assets/624b9955-6337-459c-8640-b882aec0df29)
 
-## Konfigurasi (opsional)
-Setting server tambahan yang diperlukan untuk meningkatkan fungsi dan kinerja aplikasi, misalnya:
-- batas upload file
-- batas memori
-- dll
-
-Plugin untuk fungsi tambahan
-- login dengan Google/Facebook
-- editor Markdown
-- dll
-
-
-##  Maintenance (opsional)
-
-Setting tambahan untuk maintenance secara periodik, misalnya:
-- buat backup database tiap pekan
-- hapus direktori sampah tiap hari
-- dll
-
-
-## Otomatisasi (opsional)
-
-Skrip shell untuk otomatisasi instalasi, konfigurasi, dan maintenance.
-
-
 ## Cara Pemakaian
 
 - Tampilan aplikasi web
 - Fungsi-fungsi utama
 - Isi dengan data real/dummy (jangan kosongan) dan sertakan beberapa screenshot
-
 
 ## Pembahasan
 Calibre dirancanag dengan interface yang sederhana, sehingga membuat pengelolaan koleksi e-book menjadi lebih mudah. Calibre memudahkan transfer buku antara komputer dan e-reader, baik secara nirkabel maupun menggunakan kabel USB. Setelah perangkat disinkronkan pertama kali, Calibre akan secara otomatis mengonversi buku ke format yang paling sesuai saat mentransfernya ke e-reader. Namun, Calibre tidak bisa membaca buku yang dilindungi DRM, yang sering berlaku untuk e-book berhak cipta dari toko-toko seperti Kindle. Keterbatasan ini bisa menjadi kendala bagi pengguna yang ingin menyinkronkan buku yang dibeli dari platform dengan perlindungan hak cipta ketat. Meskipun begitu, Calibre tetap menjadi alat yang sangat efisien dalam mentransfer dan mengelola e-book dari berbagai perangkat.
