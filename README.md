@@ -88,6 +88,7 @@ $ sudo ufw allow 8080
 $ sudo ufw status
 ```
 Jika berhasil akan menghasilkan output:
+
 ![image](https://github.com/user-attachments/assets/b83648c9-fb63-4c36-b255-7f8a25bfe2c1)
 
 ```
@@ -95,6 +96,7 @@ Jika berhasil akan menghasilkan output:
 $ calibre-server calibre-library
 ```
 Jika berhasil akan menghasilkan output:
+
 ![image](https://github.com/user-attachments/assets/afcc7948-5530-4fff-8b27-405a650e354c)
 
 Untuk menuju ke web, masukkan ip:port dalam kasus ini adalah:
