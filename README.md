@@ -97,6 +97,71 @@ $ calibre-server calibre-library
 Jika berhasil akan menghasilkan output:
 ![image](https://github.com/user-attachments/assets/afcc7948-5530-4fff-8b27-405a650e354c)
 
+Untuk menuju ke web, masukkan ip:port dalam kasus ini adalah:
+```
+172.24.142.246:8080
+```
+Dan akan menampilkan:
+![image](https://github.com/user-attachments/assets/f1d2467f-428a-45cf-a170-2dad80bb037e)
+Dan disitu sudah terdapat buku yang kita upload
+
+**D. Menambahkan Service dan User Authentication**
+```
+1. Stop server terlebih dahulu
+sudo systemctl stop calibre-server
+
+2. Membuat file bernama calibre-server.service di direktori /etc/systemd/system
+sudo nano /etc/systemd/system/calibre-server.service
+```
+Ketika di enter akan menampilkan file kosong, dan isi dengan:
+```
+## startup service
+[Unit]
+Description=calibre content server
+After=network.target
+
+[Service]
+Type=simple
+User=root
+Group=root
+ExecStart=/opt/calibre/calibre-server root/calibre-library --enable-local-write --enable-auth
+
+[Install]
+WantedBy=multi-user.target
+```
+Jangan lupa untuk ganti root dengan username, group, dan file di kode diatas
+```
+3. Cara mencari username
+whoami
+
+4. Cara mencari group
+id -gn
+```
+Menambahkan user ke dalam server
+```
+5. Menampilkan script management
+calibre-server --manage-users
+```
+Tambahkan user dengan mengetik 1 dan isikan username dan password
+![image](https://github.com/user-attachments/assets/84eb4fd7-cd74-4f7b-b14a-79b2213030e5)
+
+Jika berhasil akan menampilkan
+```
+User xyz added successfully!
+```
+Refresh service dan jalankan server
+```
+6. Reload service
+sudo systemctl daemon-reload
+
+7. Start server
+sudo systemctl start calibre-server
+
+8. Untuk melihat port dengan
+systemctl status calibre-server
+```
+Ketika masuk ke server akan ada tampilan
+![image](https://github.com/user-attachments/assets/624b9955-6337-459c-8640-b882aec0df29)
 
 ## Konfigurasi (opsional)
 Setting server tambahan yang diperlukan untuk meningkatkan fungsi dan kinerja aplikasi, misalnya:
