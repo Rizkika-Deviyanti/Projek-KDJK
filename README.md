@@ -19,10 +19,10 @@ Kelompok kami menggunakan Linux Command Line<br>
 1. Download dan install calibre server
 $ wget https://download.calibre-ebook.com/linux-installer.sh
 
-2. Periksa isi dari skrip tersebut
+2. Periksa isi dari script tersebut
 $ less linux-installer.sh
 
-3. Jalankan skrip untuk menginstal calibre
+3. Jalankan script untuk menginstall calibre
 $ sudo sh linux-installer.sh
 ```
 **B. Membuat library dan menambahakan buku**
@@ -33,13 +33,13 @@ $ wget http://www.gutenberg.org/ebooks/46.kindle.noimages -O christmascarol.mobi
 2. Membuat directory yang dapat digunakan oleh Calibre sebagai library e-book
 $ mkdir calibre-library
 
-3. Tambahkan buku yang sudah di download ke library menggunakan perintah calibredb
+3. Tambahkan buku yang sudah di-download ke library menggunakan perintah calibredb
 $ calibredb add *.mobi --with-library calibre-library/
 
-4. Cek isi library dengan
+4. Cek isi library dengan menggunakan kode berikut
 $ calibredb list --with-library calibre-library/
 ```
-Jika buku berhasil ditambahkan akan menghasilkan output:
+Jika buku berhasil ditambahkan, maka akan dihasilkan output:
 ![image](https://github.com/user-attachments/assets/0aac92f4-1624-489a-b9a8-fb6f427c01b4)
 
 **C. Menjalankan calibre Content Server dan melihat library**<br>
@@ -51,7 +51,7 @@ $ sudo ufw allow 8080
 2. Periksa status untuk memastikan port terbuka
 $ sudo ufw status
 ```
-Jika berhasil akan menghasilkan output:
+Jika berhasil, maka akan dihasilkan output:
 
 ![image](https://github.com/user-attachments/assets/b83648c9-fb63-4c36-b255-7f8a25bfe2c1)
 
