@@ -87,15 +87,16 @@ $ sudo ufw allow 8080
 2. Periksa status untuk memastikan port terbuka
 $ sudo ufw status
 ```
-Tampilan output:
-Screenshot<br>
+Jika berhasil akan menghasilkan output:
+![image](https://github.com/user-attachments/assets/b83648c9-fb63-4c36-b255-7f8a25bfe2c1)
 
 ```
 3. Jalankan perintah untuk memulai calibre content server
 $ calibre-server calibre-library
 ```
-Tampilan output:
-Screenshot<br>
+Jika berhasil akan menghasilkan output:
+![image](https://github.com/user-attachments/assets/afcc7948-5530-4fff-8b27-405a650e354c)
+
 
 ## Konfigurasi (opsional)
 Setting server tambahan yang diperlukan untuk meningkatkan fungsi dan kinerja aplikasi, misalnya:
