@@ -30,8 +30,6 @@ $ ssh root@your_server_ip/diganti
 ```
 4. Setup Firewall
 ```
-# ufw app list
-
 //Memastikan firewall mengizinkan koneksi SSH
 # ufw allow OpenSSH
 
@@ -41,6 +39,7 @@ $ ssh root@your_server_ip/diganti
 //Mengecek status koneksi SSH
 # ufw status
 ```
+Kalo
 Tampilin SSan Output:
 
 5. Mengaktifkan akses eksternal untuk user biasa
@@ -70,9 +69,14 @@ $ mkdir calibre-library
 
 3. Tambahkan buku yang sudah di download ke library menggunakan perintah calibredb
 $ calibredb add *.mobi --with-library calibre-library/
+
+4. Cek isi library dengan
+$ calibredb list --with-library calibre-library/
 ```
-Tampilan output:
-Screenshot<br>
+Jika buku berhasil ditambahkan akan menghasilkan output:
+![image](https://github.com/user-attachments/assets/0aac92f4-1624-489a-b9a8-fb6f427c01b4)
+
+
 
 **C. Menjalankan calibre Content Server dan melihat library**
 Sebelum mengakses calibre content server di browser web, kita perlu memastikan bahwa server dapat menerima traffic pada port 8080, yang merupakan port default untuk calibre.
