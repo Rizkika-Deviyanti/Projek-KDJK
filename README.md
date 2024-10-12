@@ -137,7 +137,7 @@ Next untuk lanjut ke halaman berikutnya
 
 
 ## Pembahasan
-Calibre dirancanag dengan interface yang sederhana, sehingga membuat pengelolaan koleksi e-book menjadi lebih mudah. Calibre memudahkan transfer buku antara komputer dan e-reader, baik secara nirkabel maupun menggunakan kabel USB. Setelah perangkat disinkronkan pertama kali, Calibre akan secara otomatis mengonversi buku ke format yang paling sesuai saat mentransfernya ke e-reader. Namun, Calibre tidak bisa membaca buku yang dilindungi DRM, yang sering berlaku untuk e-book berhak cipta dari toko-toko seperti Kindle. Keterbatasan ini bisa menjadi kendala bagi pengguna yang ingin menyinkronkan buku yang dibeli dari platform dengan perlindungan hak cipta ketat. Meskipun begitu, Calibre tetap menjadi alat yang sangat efisien dalam mentransfer dan mengelola e-book dari berbagai perangkat.
+Calibre didesain dengan interface yang sederhana, sehingga pengelolaan koleksi e-book pun akan jadi lebih mudah. Calibre memudahkan transfer buku antara komputer dan e-reader, baik secara wireless maupun menggunakan kabel USB. Setelah perangkat disinkronkan pertama kali, Calibre akan secara otomatis mengonversi buku ke format yang paling sesuai saat mentransfernya ke e-reader. Namun, Calibre tidak bisa membaca buku yang dilindungi DRM (sering berlaku untuk e-book berhak cipta dari toko-toko seperti Kindle). Keterbatasan ini bisa menjadi kendala bagi pengguna yang ingin menyinkronkan buku yang dibeli dari platform dengan perlindungan hak cipta ketat. Meskipun begitu, Calibre tetap menjadi alat yang sangat efisien dalam mentransfer dan mengelola e-book dari berbagai perangkat.
 <details>
   <summary>Kelebihan Calibre</summary>
 - Praktis dan mudah digunakan<br>
@@ -147,7 +147,7 @@ Calibre dirancanag dengan interface yang sederhana, sehingga membuat pengelolaan
 
 <details>
   <summary>Kekurangan Calibre</summary>
-- Tampilan pengguna kurang modern<br>
+- Tampilan pengguna yang sangat lawas, kurang modern<br>
 - Memakan banyak sumber daya sistem, terutama saat mengelola koleksi e-book yang besar atau saat melakukan konversi format<br>
 - Masalah hak cipta saat mengimpor atau menonversi e-book<br>
 - Bagi pemula, menghubungkan perangkat e-reader ke Calibre bisa terasa rumit
