@@ -1,7 +1,7 @@
-# Projek KDJK Kelompok 4 P3
+# Projek Komunikasi Data dan Jaringan Kelompok 4 - P3
 |        Nama                  |     NIM      | 
 |------------------------------|--------------|
-| Rizkika Deviyanti            | G6401221207 | 
+| Rizkika Deviyanti            | G6401221007  | 
 | Cindy Anatasya Sagala        | G6401221018  | 
 | Shafaya Saskirana            | G6401221092  | 
 | Justin Kristaldi Djafar      | G6401221102  | 
