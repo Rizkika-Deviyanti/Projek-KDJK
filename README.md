@@ -126,8 +126,7 @@ Skrip shell untuk otomatisasi instalasi, konfigurasi, dan maintenance.
 
 
 ## Pembahasan
-
-- Pendapat anda tentang aplikasi web ini
+Calibre dirancanag dengan interface yang sederhana, sehingga membuat pengelolaan koleksi e-book menjadi lebih mudah. Calibre memudahkan transfer buku antara komputer dan e-reader, baik secara nirkabel maupun menggunakan kabel USB. Setelah perangkat disinkronkan pertama kali, Calibre akan secara otomatis mengonversi buku ke format yang paling sesuai saat mentransfernya ke e-reader. Namun, Calibre tidak bisa membaca buku yang dilindungi DRM, yang sering berlaku untuk e-book berhak cipta dari toko-toko seperti Kindle. Keterbatasan ini bisa menjadi kendala bagi pengguna yang ingin menyinkronkan buku yang dibeli dari platform dengan perlindungan hak cipta ketat. Meskipun begitu, Calibre tetap menjadi alat yang sangat efisien dalam mentransfer dan mengelola e-book dari berbagai perangkat.
 <details>
   <summary>Kelebihan Calibre</summary>
 - Praktis dan mudah digunakan<br>
@@ -142,8 +141,7 @@ Skrip shell untuk otomatisasi instalasi, konfigurasi, dan maintenance.
 - Masalah hak cipta saat mengimpor atau menonversi e-book<br>
 - Bagi pemula, menghubungkan perangkat e-reader ke Calibre bisa terasa rumit
 </details>
-- Bandingkan dengan aplikasi web lain yang sejenis
-
+Salah satu aplikasi e-book lainnya adalah Librum. Librum berfokus pada kemudahan dan produktivitas, dengan fitur seperti e-reader modern, perpustakaan online yang bisa disesuaikan, sinkronisasi antar perangkat, toko buku in-app, serta kemampuan menyoroti dan menandai teks. Fitur mendatang termasuk pencatatan, TTS, dan statistik pembacaan. Sebaliknya, Calibre menawarkan fitur teknis yang lebih mendalam, seperti pembukaan buku besar dengan cepat, TTS berbasis neural network, pencarian teks penuh di seluruh perpustakaan, sinkronisasi halaman buku fisik dan digital, serta profil tampilan yang bisa disimpan. Calibre juga mendukung berbagai format dan arsitektur perangkat keras yang lebih luas. Librum unggul dalam kesederhanaan, sedangkan Calibre lebih fleksibel dan kaya fitur teknis.
 
 ## Referensi
 https://www.digitalocean.com/community/tutorials/how-to-create-a-calibre-ebook-server-on-ubuntu-20-04
