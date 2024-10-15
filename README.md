@@ -115,9 +115,5 @@ Selain itu, fitur kolaborasi menjadi salah satu keunggulan besar dari DokuWiki, 
 - Masalah hak cipta saat mengimpor atau menonversi e-book<br>
 
 ## Referensi
-https://github.com/dokuwiki/dokuwiki
-https://download.dokuwiki.org
-
-## Referensi
-https://github.com/dokuwiki/dokuwiki
+https://github.com/dokuwiki/dokuwiki <br>
 https://download.dokuwiki.org
