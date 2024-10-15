@@ -53,6 +53,7 @@ Buat file konfigurasi untuk DokuWiki di /etc/apache2/sites-available/
 $ sudo nano /etc/apache2/sites-available/dokuwiki.conf
 ```
 **2. Tambahkan konfigurasi berikut ke dalam file**
+
 Tambahkan kode berikut di dalam file konfigurasi Apache
 ```
 <VirtualHost *:80>
@@ -66,6 +67,7 @@ Tambahkan kode berikut di dalam file konfigurasi Apache
 </VirtualHost>
 ```
 **3. Aktifkan konfigurasi dan mod rewrite**
+
 Aktifkan konfigurasi situs DokuWiki dan mod rewrite, lalu restart Apache
 ```
 $ sudo a2ensite dokuwiki
