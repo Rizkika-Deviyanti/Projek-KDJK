@@ -104,12 +104,12 @@ DokuWiki menawarkan pengalaman yang cukup menyenangkan karena kesederhanaan dan 
 
 Selain itu, fitur kolaborasi menjadi salah satu keunggulan besar dari DokuWiki, karena setiap pengguna bisa bekerja bersama untuk memperbarui informasi, dengan setiap perubahan yang tercatat sehingga mudah untuk melacak histori edit. Seluruh pengalaman penggunaannya memberikan kesan bahwa DokuWiki sangat user-friendly, efisien, dan cocok untuk proyek kolaborasi dengan berbagai skala.
 
-### Kelebihan Calibre
+### Kelebihan DokuWiki
 - Proses instalasi mudah. <br>
 - Banyak Ekstensi yang memungkinkan pengguna untuk menambahkan fungsionalitas tambahan sesuai kebutuhan. <br>
 - Dapat diakses dari berbagai device, baik desktop maupun seluler, tanpa memerlukan penyesuaian tambahan. <br>
 
-### Kekurangan Calibre
+### Kekurangan DokuWiki
 - Tampilan yang kurang menarik secara visual karena DokuWiki lebih fokus pada fungsionalitas daripada estetika. <br>
 - Kurang ideal untuk aplikasi skala besar yang membutuhkan kinerja tinggi, karena Dokuwiki hanya berbasis file teks tanpa database. <br>
 - Masalah hak cipta saat mengimpor atau menonversi e-book<br>
