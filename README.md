@@ -13,121 +13,82 @@
 DokuWiki adalah perangkat lunak wiki open source yang sederhana dan sangat fleksibel, digunakan untuk membuat dan mengelola dokumentasi secara kolaboratif tanpa memerlukan database. Hal ini memudahkan pengguna karena DokuWiki menggunakan file teks biasa untuk menyimpan datanya, sehingga proses backup dan pemeliharaan menjadi lebih mudah. Dengan sintaks yang bersih dan mudah dibaca, DokuWiki cocok digunakan di berbagai konteks, mulai dari proyek pribadi hingga perusahaan besar. Perangkat ini dilengkapi dengan kontrol akses dan konektor otentikasi yang membuatnya ideal untuk digunakan di lingkungan bisnis. Selain itu, dukungan komunitas yang kuat menghadirkan beragam plugin yang memperluas fungsionalitasnya jauh melampaui penggunaan wiki tradisional.
 
 ## Instalasi
-Kelompok kami menggunakan Linux Command Line<br>
-**A. Proses instalasi calibre content server**
-```
-1. Download dan install calibre server
-$ wget https://download.calibre-ebook.com/linux-installer.sh
+### Kebutuhan
+- **Sistem Operasi**
+Windows, MacOS, Linux, atau Unix
+- **Web Server**
+Apache 2.4+ (_recommend_) atau Nginx
+- **PHP**
+7.2+
+- **RAM**
+Minimal 128 MB (256 MB atau lebih direkomendasikan untuk performa optimal, terutama untuk situs dengan banyak pengguna atau plugin)
 
-2. Periksa isi dari script tersebut
-$ less linux-installer.sh
+### A. Instalasi Dependencies
+**1. Update package list dan install dependencies**
 
-3. Jalankan script untuk menginstall calibre
-$ sudo sh linux-installer.sh
+Akses VM menggunakan SSH, kemudian jalankan perintah berikut untuk memperbarui package list dan menginstal Apache serta PHP
 ```
-**B. Membuat library dan menambahakan buku**
+$ sudo apt update
+$ sudo apt install apache2 php libapache2-mod-php php-xml
 ```
-1. Download buku ke server
-$ wget http://www.gutenberg.org/ebooks/46.kindle.noimages -O christmascarol.mobi
+### B. Download DokuWiki
+**1. Clone repository DokuWiki dari GitHub**
 
-2. Membuat directory yang dapat digunakan oleh Calibre sebagai library e-book
-$ mkdir calibre-library
+Pindahkan ke direktori /var/www/html/ dan clone repository DokuWiki
+```
+$ cd /var/www/html
+$ sudo git clone https://github.com/dokuwiki/dokuwiki.git dokuwiki
+```
+**2. Setel izin file DokuWiki**
 
-3. Tambahkan buku yang sudah di-download ke library menggunakan perintah calibredb
-$ calibredb add *.mobi --with-library calibre-library/
+Ubah kepemilikan direktori DokuWiki agar sesuai dengan web server yang digunakan
+```
+$ sudo chown -R www-data:www-data /var/www/html/dokuwiki
+```
+### C. Konfigurasi Apache
+**1. Buat file konfigurasi Apache untuk DokuWiki**
 
-4. Cek isi library dengan menggunakan kode berikut
-$ calibredb list --with-library calibre-library/
+Buat file konfigurasi untuk DokuWiki di /etc/apache2/sites-available/
 ```
-Jika buku berhasil ditambahkan, maka akan dihasilkan output:
-![image](https://github.com/user-attachments/assets/0aac92f4-1624-489a-b9a8-fb6f427c01b4)
+$ sudo nano /etc/apache2/sites-available/dokuwiki.conf
+```
+**2. Tambahkan konfigurasi berikut ke dalam file**
+Tambahkan kode berikut di dalam file konfigurasi Apache
+```
+<VirtualHost *:80>
+   ServerAdmin your-email@example.com
+   DocumentRoot /var/www/html/dokuwiki
+   <Directory /var/www/html/dokuwiki>
+      Options Indexes FollowSymLinks
+      AllowOverride All
+      Require all granted
+   </Directory>
+</VirtualHost>
+```
+**3. Aktifkan konfigurasi dan mod rewrite**
+Aktifkan konfigurasi situs DokuWiki dan mod rewrite, lalu restart Apache
+```
+$ sudo a2ensite dokuwiki
+$ sudo a2enmod rewrite
+$ sudo systemctl restart apache2
+```
+### D. Akses DokuWiki
+**1. Akses instalasi DokuWiki di browser**
 
-**C. Menjalankan calibre Content Server dan melihat library**<br>
-Sebelum mengakses calibre content server di browser web, kita perlu memastikan bahwa server dapat menerima traffic pada port 8080, yang merupakan port default untuk calibre.
+Buka browser dan akses DokuWiki melalui IP publik VM
 ```
-1. Buka port 8080
-$ sudo ufw allow 8080
+http://<IP-VM>/dokuwiki/install.php
+```
+**2. Selesaikan instalasi melalui antarmuka grafis**
 
-2. Periksa status untuk memastikan port terbuka
-$ sudo ufw status
-```
-Jika berhasil, maka akan dihasilkan output:
+Ikuti langkah-langkah instalasi yang ditampilkan di browser, buat akun admin, dan konfigurasikan pengaturan dasar.
 
-![image](https://github.com/user-attachments/assets/b83648c9-fb63-4c36-b255-7f8a25bfe2c1)
+**3. Hapus file install.php setelah instalasi selesai**
 
+Untuk alasan keamanan, hapus file install.php setelah instalasi selesai
 ```
-3. Jalankan perintah untuk memulai calibre content server
-$ calibre-server calibre-library
+$ sudo rm /var/www/html/dokuwiki/install.php
 ```
-Jika berhasil akan menghasilkan output:
-
-![image](https://github.com/user-attachments/assets/afcc7948-5530-4fff-8b27-405a650e354c)
-
-Untuk menuju ke web, masukkan ip:port dalam kasus ini adalah:
-```
-172.24.142.246:8080
-```
-Dan akan menampilkan:
-![image](https://github.com/user-attachments/assets/f1d2467f-428a-45cf-a170-2dad80bb037e)
-Dan disitu sudah terdapat buku yang kita upload
-
-**D. Menambahkan Service dan User Authentication**
-```
-1. Stop server terlebih dahulu
-sudo systemctl stop calibre-server
-
-2. Membuat file bernama calibre-server.service di direktori /etc/systemd/system
-sudo nano /etc/systemd/system/calibre-server.service
-```
-Ketika di enter akan menampilkan file kosong, dan isi dengan:
-```
-## startup service
-[Unit]
-Description=calibre content server
-After=network.target
-
-[Service]
-Type=simple
-User=root
-Group=root
-ExecStart=/opt/calibre/calibre-server root/calibre-library --enable-local-write --enable-auth
-
-[Install]
-WantedBy=multi-user.target
-```
-Jangan lupa untuk ganti root dengan username, group, dan file di kode diatas
-```
-3. Cara mencari username
-whoami
-
-4. Cara mencari group
-id -gn
-```
-Menambahkan user ke dalam server
-```
-5. Menampilkan script management
-calibre-server --manage-users
-```
-Tambahkan user dengan mengetik 1 dan isikan username dan password<br>
-![image](https://github.com/user-attachments/assets/84eb4fd7-cd74-4f7b-b14a-79b2213030e5)<br>
-Jika berhasil akan menampilkan
-```
-User xyz added successfully!
-```
-Refresh service dan jalankan server
-```
-6. Reload service
-sudo systemctl daemon-reload
-
-7. Start server
-sudo systemctl start calibre-server
-
-8. Untuk melihat port dengan
-systemctl status calibre-server
-```
-Ketika masuk ke server akan ada tampilan
-![image](https://github.com/user-attachments/assets/624b9955-6337-459c-8640-b882aec0df29)
-
 ## Cara Pemakaian
 ![image](https://github.com/user-attachments/assets/21fb1be5-edaa-4f27-a882-3cd7ead21301)
 Klik buku untuk membaca
@@ -155,6 +116,5 @@ Calibre didesain dengan interface yang sederhana, sehingga pengelolaan koleksi e
 Salah satu aplikasi e-book lainnya adalah Librum. Librum berfokus pada kemudahan dan produktivitas, dengan fitur seperti e-reader modern, perpustakaan online yang bisa disesuaikan, sinkronisasi antar perangkat, toko buku in-app, serta kemampuan menyoroti dan menandai teks. Fitur mendatang termasuk pencatatan, TTS, dan statistik pembacaan. Sebaliknya, Calibre menawarkan fitur teknis yang lebih mendalam, seperti pembukaan buku besar dengan cepat, TTS berbasis neural network, pencarian teks penuh di seluruh perpustakaan, sinkronisasi halaman buku fisik dan digital, serta profil tampilan yang bisa disimpan. Calibre juga mendukung berbagai format dan arsitektur perangkat keras yang lebih luas. Librum unggul dalam kesederhanaan, sedangkan Calibre lebih fleksibel dan kaya fitur teknis.
 
 ## Referensi
-https://www.digitalocean.com/community/tutorials/how-to-create-a-calibre-ebook-server-on-ubuntu-20-04
-https://gist.github.com/plembo/337f323e53486cbdb03100692ae8c892                                                                                      
-https://github.com/janeczku/calibre-web
+https://github.com/dokuwiki/dokuwiki
+https://download.dokuwiki.org
