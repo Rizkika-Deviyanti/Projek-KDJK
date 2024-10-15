@@ -92,11 +92,6 @@ Untuk alasan keamanan, hapus file install.php setelah instalasi selesai
 $ sudo rm /var/www/html/dokuwiki/install.php
 ```
 ## Cara Pemakaian
-![image](https://github.com/user-attachments/assets/21fb1be5-edaa-4f27-a882-3cd7ead21301)
-Klik buku untuk membaca
-![image](https://github.com/user-attachments/assets/37316bb3-abe0-4142-b0d2-e5b20d5aac90)
-Next untuk lanjut ke halaman berikutnya
-![image](https://github.com/user-attachments/assets/28c056fd-3c30-41ff-a8f0-3aaf4553ec38)
 
 ## Pembahasan
 DokuWiki menawarkan pengalaman yang cukup menyenangkan karena kesederhanaan dan kemudahan penggunaannya. Antarmuka yang sederhana dan intuitif membuat pengguna, baik pemula maupun yang sudah terbiasa dengan sistem wiki, dapat dengan cepat memahami cara menambahkan dan mengedit konten tanpa perlu banyak belajar. Hal ini sangat membantu ketika ingin membuat dokumentasi secara cepat dan kolaboratif. 
