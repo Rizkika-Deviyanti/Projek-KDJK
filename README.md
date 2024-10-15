@@ -98,7 +98,6 @@ Klik buku untuk membaca
 Next untuk lanjut ke halaman berikutnya
 ![image](https://github.com/user-attachments/assets/28c056fd-3c30-41ff-a8f0-3aaf4553ec38)
 
-
 ## Pembahasan
 DokuWiki menawarkan pengalaman yang cukup menyenangkan karena kesederhanaan dan kemudahan penggunaannya. Antarmuka yang sederhana dan intuitif membuat pengguna, baik pemula maupun yang sudah terbiasa dengan sistem wiki, dapat dengan cepat memahami cara menambahkan dan mengedit konten tanpa perlu banyak belajar. Hal ini sangat membantu ketika ingin membuat dokumentasi secara cepat dan kolaboratif. 
 
@@ -113,8 +112,7 @@ Selain itu, fitur kolaborasi menjadi salah satu keunggulan besar dari DokuWiki, 
 - Tampilan yang kurang menarik secara visual karena DokuWiki lebih fokus pada fungsionalitas daripada estetika. <br>
 - Kurang ideal untuk aplikasi skala besar yang membutuhkan kinerja tinggi, karena Dokuwiki hanya berbasis file teks tanpa database. <br>
 
-
-MediaWiki lebih kompleks dibandingkan DokuWiki. MediaWiki menggunakan database untuk menyimpan data, sehingga membutuhkan jaringan yang lebih kuat untuk menangani lalu lintas antara aplikasi dan database, serta skalabilitas yang lebih tinggi dengan integrasi caching dan keamanan yang lebih ketat. Sementara itu, DokuWiki tidak menggunakan database dan menyimpan datanya dalam file teks, yang membuat komunikasi jaringan lebih sederhana dan cocok untuk proyek dengan infrastruktur jaringan yang lebih ringan.
+Salah satu aplikasi wiki lainnya adalah MediaWiki. MediaWiki lebih kompleks dibandingkan DokuWiki, karena MediaWiki menggunakan database untuk menyimpan data, sehingga membutuhkan jaringan yang lebih kuat untuk menangani lalu lintas antara aplikasi dan database, serta skalabilitas yang lebih tinggi dengan integrasi caching dan keamanan yang lebih ketat. Sementara itu, DokuWiki tidak menggunakan database dan menyimpan datanya dalam file teks, yang membuatnya lebih sederhana dan ringan. Selain itu, DokuWiki memiliki integrasi layanan yang lebih terbatas dibandingkan MediaWiki.
 
 ## Referensi
 https://github.com/dokuwiki/dokuwiki <br>
