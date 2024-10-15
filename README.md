@@ -7,7 +7,7 @@
 | Justin Kristaldi Djafar      | G6401221102  | 
 
 # Aplikasi Web "Dokuwiki"
-![image](https://github.com/user-attachments/assets/684eff8f-1173-474c-ad1b-44e837600f55)
+![image](https://github.com/user-attachments/assets/7de9be5b-474d-4176-a43d-740b803a9434)
 
 ## Sekilas Tentang
 DokuWiki adalah perangkat lunak wiki open source yang sederhana dan sangat fleksibel, digunakan untuk membuat dan mengelola dokumentasi secara kolaboratif tanpa memerlukan database. Hal ini memudahkan pengguna karena DokuWiki menggunakan file teks biasa untuk menyimpan datanya, sehingga proses backup dan pemeliharaan menjadi lebih mudah. Dengan sintaks yang bersih dan mudah dibaca, DokuWiki cocok digunakan di berbagai konteks, mulai dari proyek pribadi hingga perusahaan besar. Perangkat ini dilengkapi dengan kontrol akses dan konektor otentikasi yang membuatnya ideal untuk digunakan di lingkungan bisnis. Selain itu, dukungan komunitas yang kuat menghadirkan beragam plugin yang memperluas fungsionalitasnya jauh melampaui penggunaan wiki tradisional.
