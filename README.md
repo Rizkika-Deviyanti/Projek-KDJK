@@ -6,7 +6,7 @@
 | Shafaya Saskirana            | G6401221092  | 
 | Justin Kristaldi Djafar      | G6401221102  | 
 
-# Aplikasi Web "Dokuwiki"
+# Aplikasi Web "DokuWiki"
 ![image](https://github.com/user-attachments/assets/7de9be5b-474d-4176-a43d-740b803a9434)
 
 ## Sekilas Tentang
