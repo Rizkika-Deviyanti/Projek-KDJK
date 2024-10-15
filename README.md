@@ -114,6 +114,8 @@ Selain itu, fitur kolaborasi menjadi salah satu keunggulan besar dari DokuWiki, 
 - Kurang ideal untuk aplikasi skala besar yang membutuhkan kinerja tinggi, karena Dokuwiki hanya berbasis file teks tanpa database. <br>
 - Masalah hak cipta saat mengimpor atau menonversi e-book<br>
 
+perbandingan dengan apk lain
+
 ## Referensi
 https://github.com/dokuwiki/dokuwiki <br>
 https://download.dokuwiki.org
