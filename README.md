@@ -98,22 +98,23 @@ Next untuk lanjut ke halaman berikutnya
 
 
 ## Pembahasan
-Calibre didesain dengan interface yang sederhana, sehingga pengelolaan koleksi e-book pun akan jadi lebih mudah. Calibre memudahkan transfer buku antara komputer dan e-reader, baik secara wireless maupun menggunakan kabel USB. Setelah perangkat disinkronkan pertama kali, Calibre akan secara otomatis mengonversi buku ke format yang paling sesuai saat mentransfernya ke e-reader. Namun, Calibre tidak bisa membaca buku yang dilindungi DRM (sering berlaku untuk e-book berhak cipta dari toko-toko seperti Kindle). Keterbatasan ini bisa menjadi kendala bagi pengguna yang ingin menyinkronkan buku yang dibeli dari platform dengan perlindungan hak cipta ketat. Meskipun begitu, Calibre tetap menjadi alat yang sangat efisien dalam mentransfer dan mengelola e-book dari berbagai perangkat.
-<details>
-  <summary>Kelebihan Calibre</summary>
-- Praktis dan mudah digunakan<br>
-- Dapat memindahkan buku ke gadget melalui browser/http (bekerja sebagai web server)<br>
-- Convert dari website ke dokumen yang bisa dibaca di ebook reader
-</details>
+DokuWiki menawarkan pengalaman yang cukup menyenangkan karena kesederhanaan dan kemudahan penggunaannya. Antarmuka yang sederhana dan intuitif membuat pengguna, baik pemula maupun yang sudah terbiasa dengan sistem wiki, dapat dengan cepat memahami cara menambahkan dan mengedit konten tanpa perlu banyak belajar. Hal ini sangat membantu ketika ingin membuat dokumentasi secara cepat dan kolaboratif. 
 
-<details>
-  <summary>Kekurangan Calibre</summary>
-- Tampilan pengguna yang sangat lawas, kurang modern<br>
-- Memakan banyak sumber daya sistem, terutama saat mengelola koleksi e-book yang besar atau saat melakukan konversi format<br>
+Selain itu, fitur kolaborasi menjadi salah satu keunggulan besar dari DokuWiki, karena setiap pengguna bisa bekerja bersama untuk memperbarui informasi, dengan setiap perubahan yang tercatat sehingga mudah untuk melacak histori edit. Seluruh pengalaman penggunaannya memberikan kesan bahwa DokuWiki sangat user-friendly, efisien, dan cocok untuk proyek kolaborasi dengan berbagai skala.
+
+### Kelebihan Calibre
+- Proses instalasi mudah. <br>
+- Banyak Ekstensi yang memungkinkan pengguna untuk menambahkan fungsionalitas tambahan sesuai kebutuhan. <br>
+- Dapat diakses dari berbagai device, baik desktop maupun seluler, tanpa memerlukan penyesuaian tambahan. <br>
+
+### Kekurangan Calibre
+- Tampilan yang kurang menarik secara visual karena DokuWiki lebih fokus pada fungsionalitas daripada estetika. <br>
+- Kurang ideal untuk aplikasi skala besar yang membutuhkan kinerja tinggi, karena Dokuwiki hanya berbasis file teks tanpa database. <br>
 - Masalah hak cipta saat mengimpor atau menonversi e-book<br>
-- Bagi pemula, menghubungkan perangkat e-reader ke Calibre bisa terasa rumit
-</details>
-Salah satu aplikasi e-book lainnya adalah Librum. Librum berfokus pada kemudahan dan produktivitas, dengan fitur seperti e-reader modern, perpustakaan online yang bisa disesuaikan, sinkronisasi antar perangkat, toko buku in-app, serta kemampuan menyoroti dan menandai teks. Fitur mendatang termasuk pencatatan, TTS, dan statistik pembacaan. Sebaliknya, Calibre menawarkan fitur teknis yang lebih mendalam, seperti pembukaan buku besar dengan cepat, TTS berbasis neural network, pencarian teks penuh di seluruh perpustakaan, sinkronisasi halaman buku fisik dan digital, serta profil tampilan yang bisa disimpan. Calibre juga mendukung berbagai format dan arsitektur perangkat keras yang lebih luas. Librum unggul dalam kesederhanaan, sedangkan Calibre lebih fleksibel dan kaya fitur teknis.
+
+## Referensi
+https://github.com/dokuwiki/dokuwiki
+https://download.dokuwiki.org
 
 ## Referensi
 https://github.com/dokuwiki/dokuwiki
