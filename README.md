@@ -112,9 +112,9 @@ Selain itu, fitur kolaborasi menjadi salah satu keunggulan besar dari DokuWiki, 
 ### Kekurangan DokuWiki
 - Tampilan yang kurang menarik secara visual karena DokuWiki lebih fokus pada fungsionalitas daripada estetika. <br>
 - Kurang ideal untuk aplikasi skala besar yang membutuhkan kinerja tinggi, karena Dokuwiki hanya berbasis file teks tanpa database. <br>
-- Masalah hak cipta saat mengimpor atau menonversi e-book<br>
 
-perbandingan dengan apk lain
+
+MediaWiki lebih kompleks dibandingkan DokuWiki. MediaWiki menggunakan database untuk menyimpan data, sehingga membutuhkan jaringan yang lebih kuat untuk menangani lalu lintas antara aplikasi dan database, serta skalabilitas yang lebih tinggi dengan integrasi caching dan keamanan yang lebih ketat. Sementara itu, DokuWiki tidak menggunakan database dan menyimpan datanya dalam file teks, yang membuat komunikasi jaringan lebih sederhana dan cocok untuk proyek dengan infrastruktur jaringan yang lebih ringan.
 
 ## Referensi
 https://github.com/dokuwiki/dokuwiki <br>
