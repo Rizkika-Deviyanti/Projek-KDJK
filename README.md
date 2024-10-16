@@ -92,6 +92,22 @@ Untuk alasan keamanan, hapus file install.php setelah instalasi selesai
 $ sudo rm /var/www/html/dokuwiki/install.php
 ```
 ## Cara Pemakaian
+1. Klik 'Create this page' untuk menuliskan blog baru
+![White Illustrative Creative Literature Project Presentation](https://github.com/user-attachments/assets/24dd8c9d-83ec-4377-8af3-ab7760bc727b)
+2. Buatlah blog baru
+![White Illustrative Creative Literature Project Presentation (1)](https://github.com/user-attachments/assets/ceb2cd61-81dc-4a99-bc77-2d6b98e597b3)
+3. Menggunakan fitur preview sebelum mempublikasikan blog
+![White Illustrative Creative Literature Project Presentation (2)](https://github.com/user-attachments/assets/e2f9afc4-98ec-49c8-80ee-0e5b5e395c49)
+4. Publikasikan blog
+![White Illustrative Creative Literature Project Presentation (3)](https://github.com/user-attachments/assets/6f2aac73-9b69-4b4e-a3ec-e77d430dc1c3)
+5. Mengecek histori edit yang pernah dilakukan
+![White Illustrative Creative Literature Project Presentation (4)](https://github.com/user-attachments/assets/4820676e-4ace-42bd-a9d3-c4f1c7bf2a69)
+6. Membandingkan versi edit terbaru dan terlama pada histori
+![White Illustrative Creative Literature Project Presentation (5)](https://github.com/user-attachments/assets/b2f407b9-8a7d-47ea-a7e9-eea604a81adf)
+7. Menggunakan fitur media manager untuk mempublikasikan file media
+![White Illustrative Creative Literature Project Presentation (6)](https://github.com/user-attachments/assets/339250f4-2cfe-474f-9536-c905f87ac349)
+8. Setelah medianya diunggah, tampilan seperti gambar dibawah ini
+![White Illustrative Creative Literature Project Presentation (7)](https://github.com/user-attachments/assets/172a371a-bcaf-42d3-8ac7-74c36ce163b5)
 
 ## Pembahasan
 DokuWiki menawarkan pengalaman yang cukup menyenangkan karena kesederhanaan dan kemudahan penggunaannya. Antarmuka yang sederhana dan intuitif membuat pengguna, baik pemula maupun yang sudah terbiasa dengan sistem wiki, dapat dengan cepat memahami cara menambahkan dan mengedit konten tanpa perlu banyak belajar. Hal ini sangat membantu ketika ingin membuat dokumentasi secara cepat dan kolaboratif. 
