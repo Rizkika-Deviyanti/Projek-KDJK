@@ -26,7 +26,7 @@ Minimal 128 MB (256 MB atau lebih direkomendasikan untuk performa optimal, terut
 ### A. Instalasi Dependencies
 **1. Update package list dan install dependencies**
 
-Akses VM menggunakan SSH, kemudian jalankan perintah berikut untuk memperbarui package list dan menginstal Apache serta PHP
+Pastikan sudah membuat VM instance dengan konfigurasi yg disesuaikan. Kemudian akses VM menggunakan SSH, kemudian jalankan perintah berikut untuk memperbarui package list dan menginstal Apache serta PHP
 ```
 $ sudo apt update
 $ sudo apt install apache2 php libapache2-mod-php php-xml
